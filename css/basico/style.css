@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.main-header {
+  background: greenyellow;
+  width: 100%;
+  padding: 8px 6px;
+}
+
+.main-header > div {
+  display: inline-block;
+}
+
+.main-nav {
+  display: inline-block;
+  text-align: ;
+}
+
+.main-nav-item a {
+  text-decoration: none;
+}
+
+.main-nav-item {
+  display: inline-block;
+}

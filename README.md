@@ -83,6 +83,122 @@ background: blue;
 
 ```
 
+# Combinando seletores
+
+No css podemos combinar multiplos seletores para que ele fique mais especifico e modifique apenas aquela seleção.
+
+1. irmão adjacentes
+
+- São irmãos proximos (um abaixo do outro) que compartilham o mesmo pai.
+- Apenas o segundo elemento (após o sinal de +) será modificado
+
+h2 + p {
+
+}
+
+![exemplo-irmaos-adjacentes](./img/Captura%20de%20tela%20de%202022-11-20%2010-57-38.png)
+
+2. Irmão geral
+
+- Modifica o irmão mesmo que tenha outros elementos proximos
+- Apenas o segundo elemento (após o sinal de +) será modificado
+
+h2 ~ p {
+
+}
+
+![exemplo-irmaos-geral](./img/Captura%20de%20tela%20de%202022-11-20%2011-04-40.png)
+
+3. Filho
+
+- Modifica o segundo elemento somente se for um filho direto (que está dentro do pai)
+
+div > p {
+
+}
+
+![exemplo-filho-direto](./img/Captura%20de%20tela%20de%202022-11-20%2011-08-52.png)
+
+4. Decendentes
+
+- Modifica o segundo elemento mesmo que não não seja um filho direto
+
+div p {
+
+}
+
+![exemplo-filho-direto](./img/Captura%20de%20tela%20de%202022-11-20%2011-12-46.png)
+
+# Propriedades e Valores CSS
+
+No css temos propriedades que alteram de alguma forma a estilização dos nossos sites.
+
+Exemplos:
+
+- color
+- margin
+- display
+
+Todas essas propriedades são especificas do css e que recebem um determinado valor, alterando as caracteristicas quando aplicadas.
+
+Já os valores complementam as propriedades de forma especifica.
+
+- red
+- 10px
+- block
+
+# Box-Model
+
+Tudo que escrevemos no HTML são "caixas" e vamos aprender como modificar a Altura, largura e como essas caixas se comportam quando alteradas pelo css.
+
+Nossas "caixas" são compostas pelas seguintes caracteristicas.
+
+- Content (conteudo)
+  Content é o conteudo que incluimos dentro de alguma tag, seja um texto , uma imagem ou um audio por exemplo.
+
+- Padding
+  Padding é o espaçamento interno entre a conteudo e a borda
+
+- Border
+  Borda como o nome já diz é a borda que envolve o conteudo, toda caixa tem borda, mas só vemos se atribuirmos valores para ela.
+
+- Margin
+  Já a Margin é a distancia entre uma caixa e outra.
+
+<b>As propriedades Padding e Borda ao serem atribuidas, aumentam o tamanho da caixa</b>
+
+Como arrumamos isso?
+
+No css temos uma propriedade que ajusta o tamanho da caixa para que a largura + altura + padding + borda tenha o tamanho setado para aquela caixa.
+
+```css:
+
+#body {
+box-sizing: border-box;
+}
+
+```
+
+# Displays
+
+Essa propriedade modifica o direcionamento dos elementos HTML, no css temos elementos inlines e block.
+
+- Display Inline
+
+Transforma os elementos em inline ou seja um do lado do outro e a largura do seu elemento é determinada pelo tamanho do conteudo.
+
+Obs: Propriedades inline não aceita modificação de altura do elemento.
+
+- Display block
+
+Transforma os elementos em block, que ocupam a largura total e joga os outros elementos para baixo.
+
+Obs: Aceita altura e largura
+
+- Display inline-block
+
+Une os dos display anterior, mantem os elementos um ao lado do outro mas agora aceitando as caracteristicas de block, onde podemos setar altura e largura.
+
 ## Arquitetura Css
 
 # Padrão BEM
