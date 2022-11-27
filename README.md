@@ -199,6 +199,63 @@ Obs: Aceita altura e largura
 
 Une os dos display anterior, mantem os elementos um ao lado do outro mas agora aceitando as caracteristicas de block, onde podemos setar altura e largura.
 
+# Pensando responsividamente
+
+## unidades de medidas
+
+unidades de medidas no css, é como setamos tamanhos, seja de font, de altura, largura e essas medidas ajudam ou atrapalham na hora de deixa um site responsivo e vamos conhecer seus tipos e unidades.
+
+- Unidades Absolutas
+
+Unidades absolutas são unidades que ao serem setadas elas não se adaptam ou mudam pois são fixas, a mais usada e que precisamos saber é o pixel (não representa o pixel exato de uma tela).
+
+**px**
+
+- Unidades em porcetagem
+
+Unidades de medidas em % são referente ao pai(comum usarmos para definirmos a larguras das coisas)
+
+**50%**
+
+- Unidade relativas
+
+Temos dois tipos de unidades relativas, relativa ao font-size e ao view port (tela).
+
+**em**
+**rem**
+**vh**
+**vw**
+
+## em e rem
+
+Ambas são unidades de medidas relativas ao font-size.
+
+- em
+
+é uma unidade relacionado ao elemento pai, uma vez mudada o em começa a valer a unidade relacionado ao pai.
+
+- rem
+
+é uma uniade relacionado ao root (por padrão 16px), se mudarmos esse valor o rem será o tamanho definido no root.
+
+## min e max-widght
+
+max e min-width define o "limite" que um determinado elemento vai crescer ou diminuir.
+
+- max
+
+Enquanto a largura definida for menor que a definida o conteudo cresce, apos isso ele para.
+
+- min
+
+Enquanto a largura definida for maior maior o conteudo cresce, ao chegar no determinada para.
+
+## Qual unidade de medida usar?
+
+- font-size : rem
+- padding e margins : rem
+- width : em ou %
+
 ## Arquitetura Css
 
 # Padrão BEM
