@@ -6,17 +6,6 @@ body {
 }
 
 /* só vai aplicar a regra enquanto a tela for maior que 400px */
-@media (min-width: 400px) {
-  body {
-    background: red;
-  }
-}
-
-@media (min-width: 600px) {
-  body {
-    background: blue;
-  }
-}
 
 /* tipografia */
 h1 {
@@ -44,6 +33,19 @@ p {
   align-items: flex-start;
   margin: 1rem 0;
 }
+
+@media (max-width: 600px) {
+  .colunas {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .colunas {
+    width: 100%;
+  }
+}
+
 .container {
   width: 95%;
   max-width: 980px;
